@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pribadi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">ProfilKu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="text-center py-5 bg-light">
+  <img src="img/profile.jpg" class="rounded-circle mb-3 profile-img" alt="Profil" width= 200 height= auto>
+  <h1 class="fw-bold">Abulkhair Rizvan Yahya</h1>
+  <p class="text-muted">Frontend Developer | UI Designer</p>
+  <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#aboutModal">Selengkapnya</button>
+</section>
+
+<!-- MODAL ABOUT -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tentang Saya</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Saya adalah pengembang web yang fokus pada frontend dan desain UI. Berpengalaman dalam membangun aplikasi responsif dan estetis.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Tentang Saya</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Nama:</strong> Abulkhair Rizvan Yahya</p>
+        <p><strong>Profesi:</strong> Web Developer</p>
+        <p><strong>Email:</strong> yahya@example.com</p>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Pendidikan:</strong> Teknik Informatika</p>
+        <p><strong>Hobi:</strong> Coding, Desain, Traveling</p>
+        <p><strong>Domisili:</strong> Jakarta</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / CAROUSEL -->
+<section id="gallery" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Galeri Proyek</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/proyek_1.jpg" class="d-block w-100 carousel-img" alt="Proyek 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/proyek_2.jpg" class="d-block w-100 carousel-img" alt="Proyek 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 text-center bg-dark text-white">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Hubungi Saya</h2>
+    <p>Email: yahya@example.com | WhatsApp: +62 812-3456-7890</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3 bg-black text-white">
+  <small>&copy; 2025 Abulkhair Rizvan Yahya. All rights reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

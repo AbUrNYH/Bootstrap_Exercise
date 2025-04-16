@@ -1,0 +1,16 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-img {
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
